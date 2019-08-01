@@ -14,18 +14,3 @@ SELECT NAME,TYPE,state,
 ;
 
 
-SELECT dg.name "DG Name",
-         d.name "Disk Name",
-         d.PATH,
-         d.header_status
-    FROM v$asm_disk d, v$asm_diskgroup_stat dg
-   WHERE d.group_number = dg.group_numberr AND dg.name NOT LIKE 'D3%'
-ORDER BY 1;
-
-
-select * from v$parameter where name like 'db_create%';
-
-set lines 200
-set pages 300
-col file_name for a40
-select file_name, bytes/1024/1024/1024, autoextensible, maxbytes/1024/1024/1024 from dba_Data_files where tablespace_name ='&tbs_name';
