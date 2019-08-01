@@ -1,4 +1,3 @@
-/*<TOAD_FILE_CHUNK>*/
 set lines 160
 set pages 1000
 col username format a12
