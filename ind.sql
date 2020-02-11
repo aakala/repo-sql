@@ -1,5 +1,5 @@
 -- -----------------------------------------------------------------------------------
--- File Name    - https://github.com/aakala/repo-sql/ind.sql
+-- File Name    - https://github.com/aakala/repo-sql/blob/master/ind.sql
 --               
 -- Description  - Displays brief Index details
 --               
