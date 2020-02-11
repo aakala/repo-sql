@@ -1,5 +1,5 @@
 -- -----------------------------------------------------------------------------------
--- File Name    - https://github.com/aakala/repo-sql/ind-cols.sql
+-- File Name    - https://github.com/aakala/repo-sql/blob/master/ind-cols.sql
 --               
 -- Description  - Displays the list of indexes on a particular column
 --               
