@@ -11,8 +11,7 @@
 --                    e.g. @ind EMP EMP_PK 1=1
 --                    
 --              -e.g.  2. Filtering by table, column name & owner
---                  @:1,$d
-ind-cols  table_name col_name index_owner='owner-name'
+--                 @ind-cols  table_name col_name index_owner='owner-name'
 --                  
 --                    e.g. @ind  EMP EMP_PK  index_owner='SCOTT'
 --               
