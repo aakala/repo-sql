@@ -8,25 +8,6 @@ col uptime for a17 head "Days Hrs Min Sec"
 
 
 select name, open_mode, database_role, host_name, instance_name,db_unique_name,log_mode, startup_time from v$database, v$instance;
-Prompt 
-Prompt  Product components and versions 
-Prompt ==================================
-
-col product for a50
-col version for a15
-col status for a30
-  select *
-    from product_component_version;
-
-
-Prompt 
-Prompt Database components and versions
-Prompt ================================
-
-
-col comp_id for a20
-col comp_name for a45
-select comp_id, comp_name, status, version from dba_registry;
 
 Prompt 
 Prompt  RAC node information 
