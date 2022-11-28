@@ -1,3 +1,18 @@
+------------------------------------------------------------------------------
+--
+--
+--
+-- File name:   list-sid-for-sqlid.sql
+-- Purpose:     Lists all the SID's running a particular SQL 
+--
+--
+-- Disclaimer:  This script is provided "as is", so no warranties or guarantees are
+--              made about its correctness, reliability and safety. Use it at your
+--              own risk!
+--
+--
+--------------------------------------------------------------------------------
+--
 set verify off
 set pagesize 999
 set pages 1000
