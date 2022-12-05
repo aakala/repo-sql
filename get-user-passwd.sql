@@ -18,12 +18,11 @@
 --
 --------------------------------------------------------------------------------
 --
-
+spool alter-&username-password.sql
 set feedback  off heading off
 set lines 300 pages 0
-
-Prompt Username accept username 
  with t as
  ( select TO_CHAR(dbms_metadata.get_ddl('USER','&username')) ddl from dual )
   select replace(ddl,'CREATE','ALTER')||';'
   from t;
+spool off;

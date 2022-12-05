@@ -1,3 +1,5 @@
+--check undo tbs block_Size
+
 SELECT s.inst_id,
         r.name                   rbs,
         nvl(s.username, 'None')  oracle_user,
@@ -5,7 +7,7 @@ SELECT s.inst_id,
         p.username               unix_user,
         p.spid                   unix_pid,
         TO_CHAR(s.logon_time, 'mm/dd/yy hh24:mi:ss') as login_time,
-        t.used_ublk * 32768/1024/1024/102  as undo_GB,
+        t.used_ublk * &undo_blk_sz/1024/1024/1024  as undo_GB,
                 st.sql_text as sql_text
    FROM gv$process     p,
         v$rollname     r,
