@@ -10,14 +10,11 @@
 --Personal laptop
 
 	cd ~/Git-Repositories-Base/repo-sql
-	
- git pull
+	git pull
 
 --- Steps to push from cloned master repo
  
-  git add .
-
-  git commit -m "adding files"
-
-  git push
+  	git add .
+	git commit -m "adding files"
+	git push
 
